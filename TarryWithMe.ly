@@ -4,13 +4,37 @@
 
 %LSR by Carl Sorensen on Jan 19, 2010.
 %LSR modified by Ed Gordijn on Feb.2014 for v2.18
-
+\paper
+{
+    indent = 0.0
+    line-width = 185 \mm
+    %between-system-space = 0.1 \mm
+    %between-system-padding = #1
+    %ragged-bottom = ##t
+    %top-margin = 0.1 \mm
+    %bottom-margin = 0.1 \mm
+    %foot-separation = 0.1 \mm
+    %head-separation = 0.1 \mm
+    %before-title-space = 0.1 \mm
+    %between-title-space = 0.1 \mm
+    %after-title-space = 0.1 \mm
+    %paper-height = 32 \cm
+    %print-page-number = ##t
+    %print-first-page-number = ##t
+    %ragged-last-bottom
+    %horizontal-shift
+    %system-count
+    %left-margin
+    %paper-width
+    %printallheaders
+    %systemSeparatorMarkup
+}
 \header
 {
     %dedication = ""
     title = "Tarry With Me"
     subtitle = ""
-    subsubtitle = "TARRY WITH ME (SHAW)    8.7.8.7"
+    subsubtitle = "TARRY WITH ME (SHAW)    8.7.8.7 D"
     poet = \markup{ "Caroline L. Smith (1853)"}
     composer = \markup{ Knowles Shaw}
     %meter = "8.7.8.7 D"
