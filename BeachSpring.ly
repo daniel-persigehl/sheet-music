@@ -9,7 +9,7 @@
 % ⌝ = u231D
 
 \version "2.10.33"
-#(ly:set-option 'point-and-click #f)
+#(ly:set-option 'point-and-click #t)
 
 \paper
 {
@@ -43,10 +43,10 @@
     title = "Lord, Whose Love in Humble Service"
     subtitle = ""
     subsubtitle = "BEACH SPRING    8.7.8.7 D"
-     poet = \markup{ \italic Text: Albert F. Bayly (1961)}
-     composer = \markup{ \italic Music: Benjamin F. White (1844)}
-     meter = "8.7.8.7 D"
-    %opus = ""
+     poet = \markup{ "Albert F. Bayly (1961)"}
+    %composer = \markup{ Benjamin F. White}
+    %meter = "8.7.8.7 D"
+    opus = \markup { \italic "The Sacred Harp (1844)"}
     %arranger = ""
     %instrument = ""
     %piece = \markup{\null \null \null \null \null \null \null \null \null \null \null \null \null \italic Slowly \null \null \null \null \null \note #"4" #1.0 = 70-100}
@@ -150,7 +150,7 @@ bassWords = \lyricmode
 		\global
 		%\override Score.MetronomeMark #'transparent = ##t
 		\override Score.MetronomeMark #'stencil = ##f
-		\tempo 4 = 120 \time 6/4 \key f \major
+		\tempo 4 = 120 \time 3/2 \key f \major
   \partial 2  f'4 f
   g2 f2 a4 a
   g f d2 f4 f
