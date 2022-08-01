@@ -41,11 +41,11 @@
 {
     %dedication = ""
     title = "Lord, Whose Love in Humble Service"
-    %subtitle = ""
-    %subsubtitle = ""
-    % poet = \markup{ \italic Text: }
-    % composer = \markup{ \italic Music: }
-    %meter = ""
+    subtitle = ""
+    subsubtitle = "BEACH SPRING    8.7.8.7 D"
+     poet = \markup{ \italic Text: Albert F. Bayly (1961)}
+     composer = \markup{ \italic Music: Benjamin F. White (1844)}
+     meter = "8.7.8.7 D"
     %opus = ""
     %arranger = ""
     %instrument = ""
@@ -59,8 +59,8 @@
 global =
 {
     %\override Staff.TimeSignature #'style = #'()
-    \time 6/4
-    \key c \major
+    %\time 6/4
+    %\key f \major
     \override Rest #'direction = #'0
     \override MultiMeasureRest #'staff-position = #0
 }
@@ -86,15 +86,30 @@ Ev- 'ry gift that You im- part
 sopWordsTwo = \lyricmode
 {
     \set stanza = "2. "
-
+Still, your chil- dren wan- der home - less;
+still the hun- gry cry for bread;
+still the cap- tives long for free - dom;
+still in grief we mourn our dead
+As you, Lord, in deep com- pas sion
+healed the sick and freed " " the soul,
+Use the love your Spir- it kin - dles
+to our world and make us whole.  
 }
 sopWordsThree = \lyricmode
 {
     \set stanza = "3. "
+    As we wor- ship grant us vis - ion, till your love’s re- veal- ing light,
+In its height and depth and great - ness, dawns up- on our quick- ened sight.
+Mak- ing known the needs and bur- dens your com- pas- sion bids " " us bear,
+Stir- ring us to tire- less striv - ing your a- bun- dant life to share.
 }
 sopWordsFour = \lyricmode
 {
     \set stanza = "4. "
+    Called by wor- ship to your ser - vice, forth in your dear name we go
+To the child, the youth, the a - ged, love in liv- ing deeds to show.
+Hope and health, good will and com- fort, coun- sel, aid, and peace " " we give.
+That your ser- vants, Lord, in free - dom may you mer- cy know, and live.
 }
 sopWordsFive = \lyricmode
 {
@@ -135,7 +150,7 @@ bassWords = \lyricmode
 		\global
 		%\override Score.MetronomeMark #'transparent = ##t
 		\override Score.MetronomeMark #'stencil = ##f
-		\tempo 4 = 120
+		\tempo 4 = 120 \time 6/4 \key f \major
   \partial 2  f'4 f
   g2 f2 a4 a
   g f d2 f4 f
@@ -185,9 +200,9 @@ bassWords = \lyricmode
 	    }
 
 	    \new Lyrics = sopranos { s1 }
-	    %\new Lyrics = sopranosTwo { s1 }
-	    %\new Lyrics = sopranosThree { s1 }
-	    %\new Lyrics = sopranosFour { s1 }
+	    \new Lyrics = sopranosTwo { s1 }
+	    \new Lyrics = sopranosThree { s1 }
+	    \new Lyrics = sopranosFour { s1 }
 	    %\new Lyrics = sopranosFive { s1 }
 	    %\new Lyrics = sopranosSix { s1 }
 	    %\new Lyrics = sopranosSeven { s1 }
@@ -202,7 +217,7 @@ bassWords = \lyricmode
 	    \clef bass
 	    \new Voice = "tenors" \relative
 	    {
-		\voiceThree
+		\voiceThree \key f \major
     a2
   bes2. a4 g2
   a1 f2
@@ -252,9 +267,9 @@ bassWords = \lyricmode
 	    }
 	>>
 	\context Lyrics = sopranos \lyricsto sopranos \sopWords
-	%\context Lyrics = sopranosTwo \lyricsto sopranos \sopWordsTwo
-	%\context Lyrics = sopranosThree \lyricsto sopranos \sopWordsThree
-	%\context Lyrics = sopranosFour \lyricsto sopranos \sopWordsFour
+	\context Lyrics = sopranosTwo \lyricsto sopranos \sopWordsTwo
+	\context Lyrics = sopranosThree \lyricsto sopranos \sopWordsThree
+	\context Lyrics = sopranosFour \lyricsto sopranos \sopWordsFour
 	%\context Lyrics = sopranosFive \lyricsto sopranos \sopWordsFive
 	%\context Lyrics = sopranosSix \lyricsto sopranos \sopWordsSix
 	%\context Lyrics = sopranosSeven \lyricsto sopranos \sopWordsSeven
@@ -283,7 +298,8 @@ bassWords = \lyricmode
 	%\line{\italic Arrangement: }
 	%\line{\italic {Words and Music:} }
 	\line{\italic {Tune Name: Beach Spring} }
-	%\line{\italic {Poetic Meter:} }
+	\line{\italic {Poetic Meter: 	8.7.8.7 D} }
 	%\line{\italic Source: }
     }
+
 }
