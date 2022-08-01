@@ -210,7 +210,7 @@ Mor- ning of e- ter- nal rest
       \key ees \major
       \time 9/8
       \tempo 4=96
-
+      \set Staff.printPartCombineTexts = ##f
       <<
         \new NullVoice = "aligner"  \soprano
         \new Voice = "upper" \partCombine \soprano \alto
