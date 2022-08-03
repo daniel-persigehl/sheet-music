@@ -32,13 +32,13 @@
 \header
 {
     %dedication = ""
-    title = "Tarry With Me"
+    title = "Doxology"
     subtitle = ""
-    subsubtitle = "TARRY WITH ME (SHAW)    8.7.8.7 D"
-    poet = \markup{ "Caroline L. Smith (1853)"}
-    composer = \markup{ Knowles Shaw}
+    subsubtitle = "OLD HUNDREDTH    8.8.8.8"
+    poet = \markup{ "Thomas Ken (1674)"}
+    composer = \markup{ attr. Louis Bourgeois (1551)}
     %meter = "8.7.8.7 D"
-    %opus = \markup { \italic "The Sacred Harp (1844)"}
+    opus = \markup { \italic "The Genevan Psalter (1844)"}
     %arranger = ""
     %instrument = ""
     %piece = \markup{\null \null \null \null \null \null \null \null \null \null \null \null \null \italic Slowly \null \null \null \null \null \note #"4" #1.0 = 70-100}
@@ -50,11 +50,11 @@ soprano = \relative g' {
 
 \key g \major
 
-g2 g4 fis e d g2 a b2
-b b4 b a g c2 b  a2
-g a4 b a g e2 fis  g2
-d' b4 g a c b2 a  g2
-g1 g
+g2 g4 fis e d g2 a b2 \bar "||"
+b b4 b a g c2 b  a2 \bar "||"
+g a4 b a g e2 fis  g2 \bar "||"
+d' b4 g a c b2 a  g2 \bar "||"
+g1 g \bar "|."
 }
 
 alto = \relative c {
@@ -84,39 +84,26 @@ c1 g
 
 verseOne = \lyricmode {
   \set stanza = #"1."
-  Tar- ry with me, O "" my Sav- ior:
-  For the day is pass - ing by;
-  See, the shades of e ven ing gath- er,
-  And the night is draw- ing nigh.
-
-  Tar- ry with me, bless - ed Sav- ior;
-  Leave me not till morn ing light:
-  For I'm lone- ly here "" with out thee:
-  Tar- ry with me thro' the night 
+  Praise God from Whom all bless -- ings flow!
+  Praise Him, all crea -- tures here be -- low!
+  Praise Him a -- bove, ye heaven -- ly host!
+  Praise Fa -- ther, Son, and Ho -- ly Ghost!
+  A -- men.
 }
 
 verseTwo = \lyricmode {
   \set stanza = #"2."
-  Ma- ny friends were ga - thered round me
-  In the bright days of "" the past;
-  But the grave has closed "" a- bove them,
-  And I lin- ger here at last.
+
 }
 
 verseThree = \lyricmode {
   \set stanza = #"3."
-  Deep- er, deep- er grow "" the shad- ows,
-  Pal- er now the glow - ing west;
-  Swift the night of death "" ad- van- ces:
-  Shall it be the night of rest?
+
 }
 
 verseFour = \lyricmode {
   \set stanza = #"4."
-Tar- ry with me, O "" my Sav- ior;
-Lay my head up- on "" thy breast
-Till the mor- ning; then "" a- wake me--
-Mor- ning of e- ter- nal rest
+
 }
 
 \score {
@@ -137,7 +124,8 @@ Mor- ning of e- ter- nal rest
     \new Lyrics \lyricsto "aligner" { \verseThree }
     \new Lyrics \lyricsto "aligner" { \verseFour }
     \new Staff {
-       \key g \major
+      \key g \major
+      \set Staff.printPartCombineTexts = ##f
        \clef bass {
          \partCombine \tenor \bass
        }
