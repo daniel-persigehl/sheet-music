@@ -168,39 +168,39 @@ ees2.
 
 verseOne = \lyricmode {
   \set stanza = #"1."
-  Tar- ry with me, O "" my Sav- ior:
+  Tar　-- ry with me, O "" my Sav -- ior:
   For the day is pass - ing by;
-  See, the shades of e ven ing gath- er,
-  And the night is draw- ing nigh.
+  See, the shades of e ven ing gath -- er,
+  And the night is draw -- ing nigh.
 
   Tar- ry with me, bless - ed Sav- ior;
   Leave me not till morn ing light:
-  For I'm lone- ly here "" with out thee:
+  For I'm lone -- ly here "" with out thee:
   Tar- ry with me thro' the night 
 }
 
 verseTwo = \lyricmode {
   \set stanza = #"2."
-  Ma- ny friends were ga - thered round me
+  Ma -- ny friends were ga - thered round me
   In the bright days of "" the past;
-  But the grave has closed "" a- bove them,
-  And I lin- ger here at last.
+  But the grave has closed "" a -- bove them,
+  And I lin -- ger here at last.
 }
 
 verseThree = \lyricmode {
   \set stanza = #"3."
-  Deep- er, deep- er grow "" the shad- ows,
-  Pal- er now the glow - ing west;
-  Swift the night of death "" ad- van- ces:
+  Deep -- er, deep -- er grow "" the shad- ows,
+  Pal -- er now the glow - ing west;
+  Swift the night of death "" ad -- van -- ces:
   Shall it be the night of rest?
 }
 
 verseFour = \lyricmode {
   \set stanza = #"4."
-Tar- ry with me, O "" my Sav- ior;
-Lay my head up- on "" thy breast
-Till the mor- ning; then "" a- wake me--
-Mor- ning of e- ter- nal rest
+Tar -- ry with me, O "" my Sav -- ior;
+Lay my head up -- on "" thy breast
+Till the mor -- ning; then "" a -- wake me--
+Mor -- ning of e -- ter -- nal rest
 }
 
 \score {
