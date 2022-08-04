@@ -150,7 +150,7 @@ verseThree = \lyricmode {
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 There's a pale weep -- ing maid -- en who toils her life a -- way,
-With a worn heart whose bet -- ter days are o'er:
+With a worn heart whose better days are o'er:
 Though her voice would be mer -- ry, 'tis sigh -- ing all the day,
 Oh! Hard times come a -- gain no more.
 }
@@ -161,9 +161,9 @@ verseFour = \lyricmode {
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 'Tis a sigh that is waft -- ed a -- cross the troubl -- ed wave,
-'Tis a wail that is heard up -- on the shore
-'Tis a dirge that is mur -- mured around the low -- ly grave
-Oh! Hard times come again no more.
+'Tis a wail that is heard upon the shore
+'Tis a dirge that is mur -- mured a -- round the low -- ly grave
+Oh! Hard times come a -- gain no more.
 }
 
 \score {
