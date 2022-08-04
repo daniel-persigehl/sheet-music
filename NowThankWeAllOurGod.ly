@@ -33,7 +33,7 @@
 {
     %dedication = ""
     title = "Now Thank We All Our God"
-    subtitle = ""
+    subtitle = "いざやともに"
     subsubtitle = "NUN DANKET    6.7.6.7.6.6.6.6"
     poet = \markup{ "Martin Rinkart (1648)"}
     composer = \markup{ Johann Crüger (1647)}
@@ -195,8 +195,41 @@ and shall be ev -- er -- more.
 }
 
 verseFour = \lyricmode {
-  \set stanza = #"4."
-    \set shortVocalName = "4."
+  \set stanza = #"1."
+    \set shortVocalName = "1."
+  \override InstrumentName #'X-offset = #3
+  \override InstrumentName #'font-series = #'bold
+い ざ や と も に こ え う ち あ げ て
+く し き み わ ざ ほ め う た わ ま し
+つ く り ま し し あ め つ ち み な
+か み に よ り て よ ろ こ び あ り
+}
+
+verseFive = \lyricmode {
+  \set stanza = #"2."
+    \set shortVocalName = "2."
+  \override InstrumentName #'X-offset = #3
+  \override InstrumentName #'font-series = #'bold
+ は は の む ね に あ り し と き よ り
+わ が ふ む み ち さ き わ い た も う
+い ま も の ち も あ だ を ふ せ ぎ
+世 の わ ざ わ い の ぞ き た ま わん
+}
+
+verseSix = \lyricmode {
+  \set stanza = #"3."
+    \set shortVocalName = "3."
+  \override InstrumentName #'X-offset = #3
+  \override InstrumentName #'font-series = #'bold
+ま よ い を 去 り や す き を あ た え
+つ ね に め ぐ み な ぐ さ め た も う
+ち ち な る か み み 子 み た ま に
+代 々 み い つ と み さ か え あ れ
+}
+
+verseSeven = \lyricmode {
+  \set stanza = #"3."
+    \set shortVocalName = "3."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 
@@ -219,6 +252,9 @@ verseFour = \lyricmode {
     \new Lyrics \lyricsto "aligner" { \verseTwo }
     \new Lyrics \lyricsto "aligner" { \verseThree }
     \new Lyrics \lyricsto "aligner" { \verseFour }
+    \new Lyrics \lyricsto "aligner" { \verseFive }
+    \new Lyrics \lyricsto "aligner" { \verseSix }
+    \new Lyrics \lyricsto "aligner" { \verseSeven }
     \new Staff {
       \key f \major
       \set Staff.printPartCombineTexts = ##f
