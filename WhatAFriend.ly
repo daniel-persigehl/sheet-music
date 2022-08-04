@@ -75,42 +75,42 @@ sopWords = \lyricmode
     % \override Score . LyricText #'self-alignment-X = #-1
     \set stanza = "1. "
     %\set vocalName = "Men/Women/Unison/SATB"
-      Lord whose love in hum- ble ser - vice
-Bore the weight of hu- man need 
-Who up- on the cross for- sa - ken
-of- fered mer- cy's per- fect deed
-We your ser- vants bring the wor- ship
-Not of voice a- lone - but heart
-Con- sec- rat- ing to Your pur - pose
-Ev- 'ry gift that You im- part
+What a friend we have in Je -- sus,
+All our sins and griefs to bear;
+What a priv -- i -- lege to car -- ry
+Ev -- 'ry -- thing to God in prayer.
+Oh, what peace we of -- ten for -- feit,
+Oh, what need less pain we bear
+All be -- cause we do not car -- ry
+Ev -- 'ry -- thing to God in prayer,
 }
 sopWordsTwo = \lyricmode
 {
     \set stanza = "2. "
-Still, your chil- dren wan- der home - less;
-still the hun- gry cry for bread;
-still the cap- tives long for free - dom;
-still in grief we mourn our dead
-As you, Lord, in deep com- pas sion
-healed the sick and freed " " the soul,
-Use the love your Spir- it kin - dles
-to our world and make us whole.  
+Have we tri -- als and temp -- ta -- tions?
+Is there trou -- ble a -- ny -- where?
+We should nev -- er be dis -- cour -- aged,
+Take it to the Lord in prayer.
+Can we find a Friend so faith -- ful,
+Who will all our sor -- rows share?
+Je -- sus knows our ev -- 'ry weak -- ness,
+Take it to the Lord in prayer,
 }
 sopWordsThree = \lyricmode
 {
     \set stanza = "3. "
-    As we wor- ship grant us vis - ion, till your love’s re- veal- ing light,
-In its height and depth and great - ness, dawns up- on our quick- ened sight.
-Mak- ing known the needs and bur- dens your com- pas- sion bids " " us bear,
-Stir- ring us to tire- less striv - ing your a- bun- dant life to share.
+Are we weak and hea -- vy lad -- en,
+Cum -- bered with a load of care?
+Pre -- cious Sav -- iour, still our re -- fuge,
+Take it to the Lord in prayer.
+Do thy friends des -- pise, for sake thee?
+Take it to the Lord in prayer:
+In his arms he'll take and shield thee,
+Thou wilt find a sol -- ace there. 
 }
 sopWordsFour = \lyricmode
 {
     \set stanza = "4. "
-    Called by wor- ship to your ser - vice, forth in your dear name we go
-To the child, the youth, the a - ged, love in liv- ing deeds to show.
-Hope and health, good will and com- fort, coun- sel, aid, and peace " " we give.
-That your ser- vants, Lord, in free - dom may you mer- cy know, and live.
 }
 sopWordsFive = \lyricmode
 {
@@ -204,7 +204,7 @@ bassWords = \lyricmode
 	    \new Lyrics = sopranos { s1 }
 	    \new Lyrics = sopranosTwo { s1 }
 	    \new Lyrics = sopranosThree { s1 }
-	    \new Lyrics = sopranosFour { s1 }
+	    %\new Lyrics = sopranosFour { s1 }
 	    %\new Lyrics = sopranosFive { s1 }
 	    %\new Lyrics = sopranosSix { s1 }
 	    %\new Lyrics = sopranosSeven { s1 }
