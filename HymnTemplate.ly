@@ -120,9 +120,6 @@ verseFour = \lyricmode {
     \new Lyrics \lyricsto "aligner" { \verseTwo }
     \new Lyrics \lyricsto "aligner" { \verseThree }
     \new Lyrics \lyricsto "aligner" { \verseFour }
-    \new Lyrics \lyricsto "aligner" { \verseFive }
-    \new Lyrics \lyricsto "aligner" { \verseSix }
-    \new Lyrics \lyricsto "aligner" { \verseSeven }
     \new Staff {
       \key f \major
       \set Staff.printPartCombineTexts = ##f
