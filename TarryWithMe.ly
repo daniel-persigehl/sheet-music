@@ -168,11 +168,12 @@ ees2.
 
 verseOne = \lyricmode {
   \set stanza = #"1."
-  Tar　-- ry with me, O "" my Sav -- ior:
+  \set shortVocalName = "1."
+  Tar -- ry with me, O "" my Sav -- ior:
   For the day is pass - ing by;
-  See, the shades of e ven ing gath -- er,
+  See, the shades of "" evening "" gath -- er,
   And the night is draw -- ing nigh.
-
+  \set shortVocalName = ""
   Tar- ry with me, bless - ed Sav- ior;
   Leave me not till morn ing light:
   For I'm lone -- ly here "" with out thee:
@@ -181,6 +182,7 @@ verseOne = \lyricmode {
 
 verseTwo = \lyricmode {
   \set stanza = #"2."
+  \set shortVocalName = "2."
   Ma -- ny friends were ga - thered round me
   In the bright days of "" the past;
   But the grave has closed "" a -- bove them,
@@ -189,6 +191,7 @@ verseTwo = \lyricmode {
 
 verseThree = \lyricmode {
   \set stanza = #"3."
+  \set shortVocalName = "3."
   Deep -- er, deep -- er grow "" the shad- ows,
   Pal -- er now the glow - ing west;
   Swift the night of death "" ad -- van -- ces:
@@ -197,6 +200,7 @@ verseThree = \lyricmode {
 
 verseFour = \lyricmode {
   \set stanza = #"4."
+  \set shortVocalName = "4."
 Tar -- ry with me, O "" my Sav -- ior;
 Lay my head up -- on "" thy breast
 Till the mor -- ning; then "" a -- wake me--
