@@ -32,10 +32,10 @@
 \header
 {
     %dedication = ""
-    title = "Title"
+    title = "Godhead Here in Hiding"
     subtitle = ""
-    subsubtitle = "TUNE METER"
-    poet = \markup{ "Poet (YYYY)"}
+    subsubtitle = "ADORO TE METER"
+    poet = \markup{ "Thomas Aquinas (YYYY)"}
     composer = \markup{ Composer  (YYYY)}
     %meter = "8.7.8.7 D"
     opus = \markup { \italic ""}
@@ -48,26 +48,47 @@
 }
 soprano = \relative g' {
 \autoBeamOff
-\partial 4 c4
+d4 fis(a) a a b a g fis e d d2   
+
+d4 fis(a) a a b a g fis e d d2 \bar "|" \break
+
+a'4 b(cis) d d cis a b a g fis e2
+
+fis4 a(g) g fis e(d) e fis d e d d2
 
 }
 
 alto = \relative c {
 \autoBeamOff
-f'4
+d'4 d(e) d d d cis d d cis a a2
+
+d4 d(e) d d d cis d d cis a a2
+
+d4 g2 fis4 fis e d d cis d d cis2
+
+d4 e2 d4 d cis(b) cis cis b cis a a2
 
 
 }
 
 tenor = \relative a {
 \autoBeamOff
-a4
+fis4 a2 a4 fis4 g e g a a fis fis2
+
+fis4 a2 a4 fis4 g e g a a fis fis2
+
+a4 g2 a4 a4 a fis g e g a a2
+
+a4 a2 a4 a4 a(fis) a a fis a fis fis2
 
 }
 
 bass = \relative g {
 \autoBeamOff
-f4
+d4 d(cis) d d g, a b d a d d2
+d4 d(cis) d d g, a b d a d d2
+fis4 e2 d4 d4 a d g, a b d a2
+d4 cis2 d4 d4 a(b) a fis b a d d2
 
 }
 
@@ -108,8 +129,8 @@ verseFour = \lyricmode {
     \new Staff {
       \set Score.midiInstrument = "Church Organ"
       \key f \major
-      \time 2/2
-      \tempo 4=80
+      \time 4/4
+      \tempo 4=70
       \set Staff.printPartCombineTexts = ##f
       <<
         \new NullVoice = "aligner"  \soprano
