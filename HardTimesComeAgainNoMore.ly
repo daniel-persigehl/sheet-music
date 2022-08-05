@@ -47,6 +47,7 @@
     tagline = ""
 }
 soprano = \relative g' {
+\autoBeamOff
 \partial 4 d8 e
 fis4 fis8 fis fis a4 fis8
 e e d e fis4 b8. a16
@@ -59,7 +60,7 @@ d2. \bar "||" \break
 
 fis8 g
 a4 r8 a8 a4 gis8 a
-b2~ a4 r
+b2( a4) r
 d4 a b a
 fis8 fis e d e4 d8 e
 fis4 fis8 fis fis a4 fis8
@@ -69,6 +70,7 @@ d2.
 }
 
 alto = \relative c {
+\autoBeamOff
 a'8 cis
 d4 d8 d d fis4 d8
 cis cis d cis d4 g8. fis16
@@ -92,10 +94,12 @@ d2.
 }
 
 tenor = \relative a {
+\autoBeamOff
 
 }
 
 bass = \relative g {
+\autoBeamOff
 d8 d
 d4 d8 d d fis4 d8
 a a b a d4 g,8. a16
@@ -108,7 +112,7 @@ d2.
 
 d8 d
 d4 r8 d d4 cis8 d
-g,2~ a4 r
+g,2( a4) r
 d d g, a
 a8 a a b a4 d8 d
 d4 d8 d d fis4 d8
@@ -119,7 +123,7 @@ d2.
 
 verseOne = \lyricmode {
   \set stanza = #"1."
-  \set shortVocalName = "1."
+  \set shortVocalName = \markup { \normalsize "1."}
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 Let us pause in life's plea -- sures and count its ma -- ny tears,
@@ -135,7 +139,7 @@ Oh! Hard times come a -- gain no more.
 
 verseTwo = \lyricmode {
   \set stanza = #"2."
-    \set shortVocalName = "2."
+    \set shortVocalName = \markup { \normalsize "2."}
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 While we seek mirth and beau -- ty and mu -- sic light and gay,
@@ -146,7 +150,7 @@ Oh! Hard times come a -- gain no more.
 
 verseThree = \lyricmode {
   \set stanza = #"3."
-  \set shortVocalName = "3."
+  \set shortVocalName = \markup { \normalsize "3."}
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 There's a pale weep -- ing maid -- en who toils her life a -- way,
@@ -157,7 +161,7 @@ Oh! Hard times come a -- gain no more.
 
 verseFour = \lyricmode {
   \set stanza = #"4."
-    \set shortVocalName = "4."
+    \set shortVocalName = \markup { \normalsize "4."}
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 'Tis a sigh that is waft -- ed a -- cross the troubl -- ed wave,
