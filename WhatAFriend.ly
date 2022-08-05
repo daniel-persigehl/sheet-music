@@ -74,6 +74,9 @@ sopWords = \lyricmode
     % \override Score . LyricText #'font-name = #"Gentium"
     % \override Score . LyricText #'self-alignment-X = #-1
     \set stanza = "1. "
+    \set shortVocalName = \markup { \normalsize"1."}
+\override InstrumentName #'X-offset = #3
+\override InstrumentName #'font-series = #'bold
     %\set vocalName = "Men/Women/Unison/SATB"
 What a friend we have in Je -- sus,
 All our sins and griefs to bear;
@@ -87,6 +90,9 @@ Ev -- 'ry -- thing to God in prayer,
 sopWordsTwo = \lyricmode
 {
     \set stanza = "2. "
+    \set shortVocalName = \markup { \normalsize"2."}
+\override InstrumentName #'X-offset = #3
+\override InstrumentName #'font-series = #'bold
 Have we tri -- als and temp -- ta -- tions?
 Is there trou -- ble a -- ny -- where?
 We should nev -- er be dis -- cour -- aged,
@@ -99,6 +105,9 @@ Take it to the Lord in prayer,
 sopWordsThree = \lyricmode
 {
     \set stanza = "3. "
+    \set shortVocalName = \markup { \normalsize"3."}
+\override InstrumentName #'X-offset = #3
+\override InstrumentName #'font-series = #'bold
 Are we weak and hea -- vy lad -- en,
 Cum -- bered with a load of care?
 Pre -- cious Sav -- iour, still our re -- fuge,
