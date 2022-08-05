@@ -34,9 +34,9 @@
     %dedication = ""
     title = "The Unclouded Day"
     subtitle = ""
-    subsubtitle = "TUNE METER"
+    subsubtitle = "THE UNCLOUDED DAY 12.10.12.10 with refrain"
     poet = \markup{ "J. K. A."}
-    composer = \markup{ J. K. Alwood (YYYY)}
+    composer = \markup{ J. K. Alwood (1885)}
     %meter = "8.7.8.7 D"
     opus = \markup { \italic ""}
     %arranger = ""
@@ -47,6 +47,7 @@
     tagline = ""
 }
 soprano = \relative g' {
+\autoBeamOff
 \partial 4 d8. d16
 g8. g16 g8. g16 g4 b8. a16
 g4 e d d8. d16
@@ -95,6 +96,7 @@ g2
 }
 
 tenor = \relative a {
+\autoBeamOff
 g8. g16
 b8. b16 b8. b16 b4 g8. g16
 g4 g g g8. g16
@@ -113,15 +115,15 @@ d2.
 
 c8. c16
 b8.~ b16 b8.~ b16 b4 g8. g16
-g8~ g g4 g \fermata b8. \fermata c16
+g8~ g g4 g b8. c16
 b8. g16 b8. c16 b4 c8.~ c16
 b2
 }
 
 bass = \relative g {
-g8. g16
+g8. g16 
 g8. g16 g8. g16 g4 g8. g16
-c4 e, g g8. g16
+c,4 e g g8. g16
 g8.~ g16 e8. g16 g8.~ g16 e8. e16
 d2. d8. d16
 g8.~ g16 g8.~ g16 g4 g8. g16
@@ -152,6 +154,7 @@ O they "tell me" of a home far a -- way;
 O they "tell me" "of a" home where no storm clouds rise;
 O they tell me of an un -- cloud-ed day.
 
+ \set shortVocalName = ""
 O the land of cloud -- less day,
 O the land of an un -- cloud -- ed day.
 O they "tell me" "of a" home where no storm -- clouds rise,
@@ -223,6 +226,7 @@ verseSeven = \lyricmode {
       \time 2/2
       \tempo 4=80
       \set Staff.printPartCombineTexts = ##f
+      
       <<
         \new NullVoice = "aligner"  \soprano
         \new Voice = "upper" \partCombine \soprano \alto
@@ -235,7 +239,7 @@ verseSeven = \lyricmode {
     \new Lyrics \lyricsto "aligner" { \verseFive }
     \new Lyrics \lyricsto "aligner" { \verseSix }
     \new Lyrics \lyricsto "aligner" { \verseSeven }
-    \new Staff {
+    \new Staff \with { \consists "Mark_engraver" } {
       \key g \major
       \set Staff.printPartCombineTexts = ##f
        \clef bass {
