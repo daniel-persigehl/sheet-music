@@ -32,11 +32,11 @@
 \header
 {
     %dedication = ""
-    title = "Title"
+    title = "The Unclouded Day"
     subtitle = ""
     subsubtitle = "TUNE METER"
-    poet = \markup{ "Poet (YYYY)"}
-    composer = \markup{ Composer  (YYYY)}
+    poet = \markup{ "J. K. A."}
+    composer = \markup{ J. K. Alwood (YYYY)}
     %meter = "8.7.8.7 D"
     opus = \markup { \italic ""}
     %arranger = ""
@@ -47,24 +47,99 @@
     tagline = ""
 }
 soprano = \relative g' {
-\partial 4 c4
+\partial 4 d8. d16
+g8. g16 g8. g16 g4 b8. a16
+g4 e d d8. d16
+g8.~ g16 g8. g16 g8.~ g16 b8. b16
+d2. d,8. d16
+g8.~ g16 g8.~ g16 g4 b8. a16
+g8~ g e4 d \fermata d'8. \fermata e16
+d8. b16 g8. a16 b4 a8.~ a16
+g2 \bar "||" \break
+
+d'4. e8
+d4 b g b
+g2 d'4. e8
+d4 b8. a16 g4 b8. b16
+a2. d,8. d16
+g8.~ g16 g8.~ g16 g4 b8. a16
+g8~ g e4 d \fermata d'8. \fermata e16
+d8. b16 g8. a16 b4 a8.~ a16
+g2
 
 }
 
 alto = \relative c {
-f'4
+b'8. b16
+d8. d16 d8. d16 d4 d8. d16
+e4 c b b8. b16
+d8.~ d16 d8. d16 d8.~ d16 g8. g16
+fis2. d8. d16
+d8.~ d16 d8.~ d16 d4 d8. d16
+e8~ e c4 b \fermata g'8. \fermata g16
+g8. g16 g8. g16 g4 fis8.~ fis16
+g2
 
+g4. g8
+g4 g g d
+g2 g4. g8
+g4 g8. g16 d4 g8. g16
+fis2.
+
+d8. d16
+d8.~ d16 d8.~ d16 d4 d8. d16
+e8~ e c4 b \fermata g'8. \fermata g16
+g8. g16 g8. g16 g4 fis8.~ fis16
+g2
 
 }
 
 tenor = \relative a {
-a4
+g8. g16
+b8. b16 b8. b16 b4 g8. g16
+g4 g g g8. g16
+b8.~ b16 b8. b16 b8.~ b16 b8. g16
+fis2. c'8. c16
+b8.~ b16 b8.~ b16 b4 g8. g16
+g8~ g g4 g \fermata b8. \fermata c16
+b8. g16 b8. c16 b4 c8.~ c16
+b2
 
+b4. c8
+b4 d b g
+b2 b4. c8
+b4 d8. c16 b4 d8. d16
+d2.
+
+c8. c16
+b8.~ b16 b8.~ b16 b4 g8. g16
+g8~ g g4 g \fermata b8. \fermata c16
+b8. g16 b8. c16 b4 c8.~ c16
+b2
 }
 
 bass = \relative g {
-f4
+g8. g16
+g8. g16 g8. g16 g4 g8. g16
+c4 e, g g8. g16
+g8.~ g16 e8. g16 g8.~ g16 e8. e16
+d2. d8. d16
+g8.~ g16 g8.~ g16 g4 g8. g16
+c,8~ c e4 g \fermata g8. \fermata g16
+g8. g16 g8. g16 d4 d8.~ d16
+g2
 
+g4. g8
+g4 g g g
+g2 g4. g8
+g4 g8. g16 g4 g8. g16
+d2.
+
+d8. d16
+g8.~ g16 g8.~ g16 g4 g8. g16
+c,8~ c e4 g \fermata g8. \fermata g16
+g8. g16 g8. g16 d4 d8.~ d16
+g2
 }
 
 verseOne = \lyricmode {
@@ -72,7 +147,15 @@ verseOne = \lyricmode {
   \set shortVocalName = "1."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-  Lyrics
+  O they tell me of a home far be -- yond the skies,
+O they "tell me" of a home far a -- way;
+O they "tell me" "of a" home where no storm clouds rise;
+O they tell me of an un -- cloud-ed day.
+
+O the land of cloud -- less day,
+O the land of an un -- cloud -- ed day.
+O they "tell me" "of a" home where no storm -- clouds rise,
+O they tell me of an un -- cloud-ed day.
 }
 
 verseTwo = \lyricmode {
@@ -80,7 +163,10 @@ verseTwo = \lyricmode {
     \set shortVocalName = "2."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-
+O they tell me of a home where my friends have gone,
+O they "tell me" of that land far a -- way,
+Where the tree of life in e -- ter -- nal bloom
+Sheds its frag -- rance thro' the un -- cloud-ed day. 
 }
 
 verseThree = \lyricmode {
@@ -88,15 +174,21 @@ verseThree = \lyricmode {
   \set shortVocalName = "3."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-
+O they tell me of a King in His beau -- ty there,
+And they "tell me" that mine eyes shall be -- hold
+Where He sits "on the" throne that is whit-er than snow,
+In the cit -- y that is made of gold. 
 }
 
 verseFour = \lyricmode {
-  \set stanza = #"1."
-    \set shortVocalName = "1."
+  \set stanza = #"4."
+    \set shortVocalName = "4."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-
+O they tell me that He smiles on His child -- ren there,
+And His smile drives their sorrows all a -- way;
+And they "tell me" "that no" tears ev -- er come a -- gain,
+In that love -- ly land of un -- cloud-ed day. 
 }
 
 verseFive = \lyricmode {
@@ -127,7 +219,7 @@ verseSeven = \lyricmode {
 <<
     \new Staff {
       \set Score.midiInstrument = "Church Organ"
-      \key f \major
+      \key g \major
       \time 2/2
       \tempo 4=80
       \set Staff.printPartCombineTexts = ##f
@@ -144,7 +236,7 @@ verseSeven = \lyricmode {
     \new Lyrics \lyricsto "aligner" { \verseSix }
     \new Lyrics \lyricsto "aligner" { \verseSeven }
     \new Staff {
-      \key f \major
+      \key g \major
       \set Staff.printPartCombineTexts = ##f
        \clef bass {
          \partCombine \tenor \bass
