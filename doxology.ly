@@ -83,7 +83,7 @@ c1 g
 }
 
 verseOne = \lyricmode {
-  \set stanza = #"1."
+  % \set stanza = #"1."
   Praise God from Whom all bless -- ings flow!
   Praise Him, all crea -- tures here be -- low!
   Praise Him a -- bove, ye heaven -- ly host!
