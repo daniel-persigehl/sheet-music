@@ -47,29 +47,33 @@
     tagline = ""
 }
 soprano = \relative g' {
+\autoBeamOff
 \partial 4 c4
 
 }
 
 alto = \relative c {
+\autoBeamOff
 f'4
 
 
 }
 
 tenor = \relative a {
+\autoBeamOff
 a4
 
 }
 
 bass = \relative g {
+\autoBeamOff
 f4
 
 }
 
 verseOne = \lyricmode {
   \set stanza = #"1."
-  \set shortVocalName = "1."
+  \set shortVocalName = \markup { \normalsize "1." }
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
   Lyrics
@@ -77,7 +81,7 @@ verseOne = \lyricmode {
 
 verseTwo = \lyricmode {
   \set stanza = #"2."
-    \set shortVocalName = "2."
+    \set shortVocalName = \markup { \normalsize "2." }
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 
@@ -85,39 +89,15 @@ verseTwo = \lyricmode {
 
 verseThree = \lyricmode {
   \set stanza = #"3."
-  \set shortVocalName = "3."
+  \set shortVocalName = \markup { \normalsize "3." }
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 
 }
 
 verseFour = \lyricmode {
-  \set stanza = #"1."
-    \set shortVocalName = "1."
-  \override InstrumentName #'X-offset = #3
-  \override InstrumentName #'font-series = #'bold
-
-}
-
-verseFive = \lyricmode {
-  \set stanza = #"2."
-    \set shortVocalName = "2."
-  \override InstrumentName #'X-offset = #3
-  \override InstrumentName #'font-series = #'bold
-
-}
-
-verseSix = \lyricmode {
   \set stanza = #"3."
-    \set shortVocalName = "3."
-  \override InstrumentName #'X-offset = #3
-  \override InstrumentName #'font-series = #'bold
-
-}
-
-verseSeven = \lyricmode {
-  \set stanza = #"3."
-    \set shortVocalName = "3."
+    \set shortVocalName = \markup { \normalsize "4." }
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
 
