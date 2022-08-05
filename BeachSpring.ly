@@ -73,7 +73,7 @@ sopWords = \lyricmode
     % \override Score . LyricText #'font-name = #"Gentium"
     % \override Score . LyricText #'self-alignment-X = #-1
     \set stanza = "1. "
-    \set shortVocalName = "1."
+    \set shortVocalName = \markup { \normalsize "1." }
     \override InstrumentName #'X-offset = #3
     \override InstrumentName #'font-series = #'bold
     %\set vocalName = "Men/Women/Unison/SATB"
@@ -89,9 +89,10 @@ Ev -- 'ry gift that You im -- part
 sopWordsTwo = \lyricmode
 {
     \set stanza = "2. "
-    \set shortVocalName = "2."
+    \set shortVocalName = \markup { \normalsize "2." }
     \override InstrumentName #'X-offset = #3
     \override InstrumentName #'font-series = #'bold
+    \override InstrumentName #'fontsize = #0.6
 Still, your chil -- dren wan -- der home - less;
 still the hun -- gry cry for bread;
 still the cap- tives long for free - dom;
@@ -104,7 +105,7 @@ to our world and make us whole.
 sopWordsThree = \lyricmode
 {
     \set stanza = "3. "
-    \set shortVocalName = "3."
+    \set shortVocalName = \markup { \normalsize "3." }
     \override InstrumentName #'X-offset = #3
     \override InstrumentName #'font-series = #'bold
     As we wor -- ship grant us vis - ion, till your love’s re -- veal -- ing light,
@@ -115,7 +116,7 @@ Stir -- ring us to tire- less striv - ing your a -- bun -- dant life to share.
 sopWordsFour = \lyricmode
 {
     \set stanza = "4. "
-    \set shortVocalName = "4."
+    \set shortVocalName = \markup { \normalsize "4." }
     \override InstrumentName #'X-offset = #3
     \override InstrumentName #'font-series = #'bold
     Called by wor- ship to your ser - vice, forth in your dear name we go
