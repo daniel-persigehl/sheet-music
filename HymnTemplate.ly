@@ -72,7 +72,7 @@ verseOne = \lyricmode {
   \set shortVocalName = "1."
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-  Now
+  Lyrics
 }
 
 verseTwo = \lyricmode {
