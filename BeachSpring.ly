@@ -73,6 +73,9 @@ sopWords = \lyricmode
     % \override Score . LyricText #'font-name = #"Gentium"
     % \override Score . LyricText #'self-alignment-X = #-1
     \set stanza = "1. "
+    \set shortVocalName = "1."
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
     %\set vocalName = "Men/Women/Unison/SATB"
       Lord whose love in hum -- ble ser - vice
 Bore the weight of hu -- man need 
@@ -86,6 +89,9 @@ Ev -- 'ry gift that You im -- part
 sopWordsTwo = \lyricmode
 {
     \set stanza = "2. "
+    \set shortVocalName = "2."
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
 Still, your chil -- dren wan -- der home - less;
 still the hun -- gry cry for bread;
 still the cap- tives long for free - dom;
@@ -98,6 +104,9 @@ to our world and make us whole.
 sopWordsThree = \lyricmode
 {
     \set stanza = "3. "
+    \set shortVocalName = "3."
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
     As we wor -- ship grant us vis - ion, till your love’s re -- veal -- ing light,
 In its height and depth and great - ness, dawns up -- on our quick -- ened sight.
 Mak -- ing known the needs and bur -- dens your com -- pas -- sion bids " " us bear,
@@ -106,6 +115,9 @@ Stir -- ring us to tire- less striv - ing your a -- bun -- dant life to share.
 sopWordsFour = \lyricmode
 {
     \set stanza = "4. "
+    \set shortVocalName = "4."
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
     Called by wor- ship to your ser - vice, forth in your dear name we go
 To the child, the youth, the a - ged, love in liv -- ing deeds to show.
 Hope and health, good will and com -- fort, coun -- sel, aid, and peace " " we give.
