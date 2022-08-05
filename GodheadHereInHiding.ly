@@ -54,7 +54,7 @@ d4 fis(a) a a b a g fis e d d2 \bar "|" \break
 
 a'4 b(cis) d d cis a b a g fis e2
 
-fis4 a(g) g fis e(d) e fis d e d d2
+fis4 a(g) fis e(d) e fis d e d d2
 
 }
 
@@ -66,7 +66,7 @@ d4 d(e) d d d cis d d cis a a2
 
 d4 g2 fis4 fis e d d cis d d cis2
 
-d4 e2 d4 d cis(b) cis cis b cis a a2
+d4 e2 d4 cis(b) cis cis b cis a a2
 
 
 }
@@ -79,7 +79,7 @@ fis4 a2 a4 fis4 g e g a a fis fis2
 
 a4 g2 a4 a4 a fis g e g a a2
 
-a4 a2 a4 a4 a(fis) a a fis a fis fis2
+a4 a2 a4 a(fis) a a fis a fis fis2
 
 }
 
@@ -88,7 +88,7 @@ bass = \relative g {
 d4 d(cis) d d g, a b d a d d2
 d4 d(cis) d d g, a b d a d d2
 fis4 e2 d4 d4 a d g, a b d a2
-d4 cis2 d4 d4 a(b) a fis b a d d2
+d4 cis2 d4 a(b) a fis b a d d2
 
 }
 
@@ -97,7 +97,10 @@ verseOne = \lyricmode {
   \set shortVocalName = \markup { \normalsize "1." }
   \override InstrumentName #'X-offset = #3
   \override InstrumentName #'font-series = #'bold
-  Lyrics
+  God -- "head here" in hid - ing whom I do a -- dore
+Masked "by these" bare shad - ows, shape and no -- thing more.
+See, "Lord, at" thy ser - vice low lies here a heart
+Lost, "all lost" in won -- der at the God thou art.
 }
 
 verseTwo = \lyricmode {
