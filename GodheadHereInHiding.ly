@@ -34,7 +34,7 @@
     %dedication = ""
     title = "Godhead Here in Hiding"
     subtitle = ""
-    subsubtitle = "ADORO TE METER"
+    subsubtitle = "ADORO TE 6.5.6.5 D"
     poet = \markup{ "Thomas Aquinas (YYYY)"}
     composer = \markup{ Composer  (YYYY)}
     %meter = "8.7.8.7 D"
@@ -48,47 +48,47 @@
 }
 soprano = \relative g' {
 \autoBeamOff
-d4 fis(a) a a b a g fis e d d2   
+d4 fis(a) a a b a2 g4 fis e d d1   
 
-d4 fis(a) a a b a g fis e d d2 \bar "|" \break
+d4 fis(a) a a b a2 g4 fis e d d1 \bar "|" \break
 
-a'4 b(cis) d d cis a b a g fis e2
+a'4 b(cis) d d cis a2 b4 a g fis e1
 
-fis4 a(g) fis e(d) e fis d e d d2
+fis4 a(g) fis e(d) e2 fis4 d e d d1
 
 }
 
 alto = \relative c {
 \autoBeamOff
-d'4 d(e) d d d cis d d cis a a2
+d'4 d(e) d d d cis2 d4 d cis a a1
 
-d4 d(e) d d d cis d d cis a a2
+d4 d(e) d d d cis2 d4 d cis a a1
 
-d4 g2 fis4 fis e d d cis d d cis2
+d4 g2 fis4 fis e d2 d4 cis d d cis1
 
-d4 e2 d4 cis(b) cis cis b cis a a2
+d4 e2 d4 cis(b) cis2 cis4 b cis a a1
 
 
 }
 
 tenor = \relative a {
 \autoBeamOff
-fis4 a2 a4 fis4 g e g a a fis fis2
+fis4 a2 a4 fis4 g e2 g4 a a fis fis1
 
-fis4 a2 a4 fis4 g e g a a fis fis2
+fis4 a2 a4 fis4 g e2 g4 a a fis fis1
 
-a4 g2 a4 a4 a fis g e g a a2
+a4 g2 a4 a4 a fis2 g4 e g a a1
 
-a4 a2 a4 a(fis) a a fis a fis fis2
+a4 a2 a4 a(fis) a2 a4 fis a fis fis1
 
 }
 
 bass = \relative g {
 \autoBeamOff
-d4 d(cis) d d g, a b d a d d2
-d4 d(cis) d d g, a b d a d d2
-fis4 e2 d4 d4 a d g, a b d a2
-d4 cis2 d4 a(b) a fis b a d d2
+d4 d(cis) d d g, a2 b4 d a d d41
+d4 d(cis) d d g, a2 b4 d a d d1
+fis4 e2 d4 d4 a d2 g,4 a b d a1
+d4 cis2 d4 a(b) a2 fis4 b a d d1
 
 }
 
