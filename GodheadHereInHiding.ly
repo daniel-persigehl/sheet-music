@@ -133,7 +133,7 @@ verseFour = \lyricmode {
       \set Score.midiInstrument = "Church Organ"
       \key f \major
       \time 4/4
-      \tempo 4=70
+      \tempo 4=90
       \set Staff.printPartCombineTexts = ##f
       <<
         \new NullVoice = "aligner"  \soprano
