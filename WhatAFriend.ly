@@ -119,15 +119,36 @@ Thou wilt find a sol -- ace there.
 }
 sopWordsFour = \lyricmode
 {
-    \set stanza = "4. "
+    \set stanza = "1. "
+    \set shortVocalName = \markup { \normalsize"1."}
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
+    い つ く し み ふ か き と も な る イェ ス は
+つ み と が う れ い を 取 り 去 り た も う
+こ こ ろ の な げ き を つ つ ま ず 述 べ て
+な ど か は 下 ろ さ ぬ 負 え る お も に を
 }
 sopWordsFive = \lyricmode
 {
-    \set stanza = "5. "
+    \set stanza = "2. "
+    \set shortVocalName = \markup { \normalsize"2."}
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
+    い つ く し み ふ か き と も な る イェ ス は
+    わ れ ら の よ わ き を し り て あ わ れ む
+    な や み か な し み に し ず め る と き も
+    い の り に こ た え て な ぐ さ め た ま わん
 }
 sopWordsSix = \lyricmode
 {
-    \set stanza = "6. "
+    \set stanza = "3. "
+    \set shortVocalName = \markup { \normalsize"3."}
+    \override InstrumentName #'X-offset = #3
+    \override InstrumentName #'font-series = #'bold
+    い つ く し み ふ か き と も な る イェ ス は
+    か わ ら ぬ あ い も て み ち び き た も う
+    よ の と も わ れ ら を 棄 て 去 る と き も
+    い の り に こ た え て い た わ り た ま わん
 }
 sopWordsSeven = \lyricmode
 {
@@ -153,7 +174,8 @@ bassWords = \lyricmode
 	\new Staff
 	<<
 	    %\set Score.midiInstrument = "Orchestral Strings"
-	    \set Score.midiInstrument = "Church Organ"
+	    %\set Score.midiInstrument = "Church Organ"
+      %\set Score.midiInstrument = "Piano"
 	    \new Voice = "sopranos"    << \relative
 	    {
 		\voiceOne
@@ -213,9 +235,9 @@ bassWords = \lyricmode
 	    \new Lyrics = sopranos { s1 }
 	    \new Lyrics = sopranosTwo { s1 }
 	    \new Lyrics = sopranosThree { s1 }
-	    %\new Lyrics = sopranosFour { s1 }
-	    %\new Lyrics = sopranosFive { s1 }
-	    %\new Lyrics = sopranosSix { s1 }
+	    \new Lyrics = sopranosFour { s1 }
+	    \new Lyrics = sopranosFive { s1 }
+	    \new Lyrics = sopranosSix { s1 }
 	    %\new Lyrics = sopranosSeven { s1 }
 	    %\new Lyrics = altos { s1 }
 	    %\new Lyrics = tenors { s1 }
@@ -282,8 +304,8 @@ bassWords = \lyricmode
 	\context Lyrics = sopranosTwo \lyricsto sopranos \sopWordsTwo
 	\context Lyrics = sopranosThree \lyricsto sopranos \sopWordsThree
 	\context Lyrics = sopranosFour \lyricsto sopranos \sopWordsFour
-	%\context Lyrics = sopranosFive \lyricsto sopranos \sopWordsFive
-	%\context Lyrics = sopranosSix \lyricsto sopranos \sopWordsSix
+	\context Lyrics = sopranosFive \lyricsto sopranos \sopWordsFive
+	\context Lyrics = sopranosSix \lyricsto sopranos \sopWordsSix
 	%\context Lyrics = sopranosSeven \lyricsto sopranos \sopWordsSeven
 	%\context Lyrics = altos \lyricsto altos \altoWords
 	%\context Lyrics = tenors \lyricsto tenors \tenorWords
